@@ -96,28 +96,3 @@ class Polinomio(object):
             return True
         else:
             return False
-
-polinomio1 = Polinomio()
-Polinomio.agregar_termino(polinomio1, 3, 5)
-print("Polinomio 1: ", Polinomio.mostrar(polinomio1))
-Polinomio.agregar_termino(polinomio1, 2, 2)
-print("Polinomio 1: ", Polinomio.mostrar(polinomio1))
-Polinomio.agregar_termino(polinomio1, 1, 3)
-print("Polinomio 1: ", Polinomio.mostrar(polinomio1))
-Polinomio.agregar_termino(polinomio1, 0, 4)
-print("Polinomio 1: ", Polinomio.mostrar(polinomio1))
-
-polinomio2 = Polinomio()
-Polinomio.agregar_termino(polinomio2, 2, 5)
-Polinomio.agregar_termino(polinomio2, 1, 6)
-Polinomio.agregar_termino(polinomio2, 0, 7)
-print("Polinomio 2: ", Polinomio.mostrar(polinomio2))
-
-polinomio3 = Polinomio.sumar(polinomio1, polinomio2)
-print("Polinomio 3: ", Polinomio.mostrar(polinomio3))
-polinomio4 = Polinomio.multiplicar(polinomio1, polinomio2)
-print("Polinomio 4: ", Polinomio.mostrar(polinomio4))
-Polinomio.eliminar(polinomio1, 3)
-print("Polinomio 1: ", Polinomio.mostrar(polinomio1))
-
-print(Polinomio.existe_termino(polinomio1, 2))
