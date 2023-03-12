@@ -97,11 +97,6 @@ class Polinomio(object):
         else:
             return False
 
-
-#multiplicar dos polinomios
-#polinomio1 = 2x^2 + 3x^1 + 4x^0
-#polinomio2 = 5x^2 + 6x^1 + 7x^0
-
 polinomio1 = Polinomio()
 Polinomio.agregar_termino(polinomio1, 3, 5)
 print("Polinomio 1: ", Polinomio.mostrar(polinomio1))
@@ -126,13 +121,3 @@ Polinomio.eliminar(polinomio1, 3)
 print("Polinomio 1: ", Polinomio.mostrar(polinomio1))
 
 print(Polinomio.existe_termino(polinomio1, 2))
-
-# Output:
-# Polinomio 1:  +5x^3
-# Polinomio 1:  +5x^3+2x^2
-# Polinomio 1:  +5x^3+2x^2+3x^1
-# Polinomio 1:  +5x^3+2x^2+3x^1+4x^0
-# Polinomio 2:  +5x^2+6x^1+7x^0
-# Polinomio 3:  +5x^3+7x^2+9x^1+11x^0
-# Polinomio 4:  +25x^5+40x^4+50x^3+50x^2+42x^1+28x^0
-# Polinomio 1:  +2x^2+3x^1+4x^0
